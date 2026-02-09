@@ -228,7 +228,7 @@ document.getElementById('form').addEventListener('submit',function(e){
 
   document.getElementById('time').value = timestamp();
 
-  emailjs.sendForm('default_service','template_iqh8z6n',this)
+  emailjs.sendForm('service_rgdbmsn','template_iqh8z6n',this)
     .then(()=>{
       const r = getReturnUrl();
       if(r) location.href = decodeURIComponent(r);
